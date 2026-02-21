@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BarberElite - Premium berber hizmetleri. Online randevu alın, saç kesimi, sakal bakımı ve cilt bakımı hizmetlerimizden yararlanın."
+    />
+    <title>BarberElite | Premium Berber Hizmetleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════ HEADER / NAV ═══════════════ -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">✂</span>
+          <span class="logo-text">Barber<em>Elite</em></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#services" class="nav-link">Hizmetler</a></li>
+          <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+          <li><a href="#gallery" class="nav-link">Galeri</a></li>
+          <li><a href="#team" class="nav-link">Ekibimiz</a></li>
+          <li><a href="#testimonials" class="nav-link">Yorumlar</a></li>
+          <li><a href="#contact" class="nav-link">İletişim</a></li>
+        </ul>
+
+        <a href="#appointment" class="btn btn-primary nav-cta">Randevu Al</a>
+
+        <!-- Animated hamburger button -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Menüyü aç/kapat"
+          aria-expanded="false"
+        >
+          <span class="hb-bar hb-top"></span>
+          <span class="hb-bar hb-mid"></span>
+          <span class="hb-bar hb-bot"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile nav overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#services" class="mobile-link">Hizmetler</a></li>
+        <li><a href="#about" class="mobile-link">Hakkımızda</a></li>
+        <li><a href="#gallery" class="mobile-link">Galeri</a></li>
+        <li><a href="#team" class="mobile-link">Ekibimiz</a></li>
+        <li><a href="#testimonials" class="mobile-link">Yorumlar</a></li>
+        <li><a href="#contact" class="mobile-link">İletişim</a></li>
+        <li>
+          <a
+            href="#appointment"
+            class="mobile-link btn btn-primary"
+            style="display: inline-block; margin-top: 0.5rem"
+            >Randevu Al</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-parallax" id="heroBg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow fade-in delay-1">Est. 2015 — İstanbul</p>
+        <h1 class="hero-title fade-in delay-2">
+          Sanatla<br /><em>Yetkinleştirilmiş</em><br />Stil
+        </h1>
+        <p class="hero-sub fade-in delay-3">
+          Premium saç kesimi ve bakım deneyimi için doğru adrestesiniz.
+        </p>
+        <div class="hero-ctas fade-in delay-4">
+          <a href="#appointment" class="btn btn-primary">Randevu Al</a>
+          <a href="#services" class="btn btn-ghost">Hizmetlerimiz</a>
+        </div>
+        <div class="hero-stats fade-in delay-5">
+          <div class="stat">
+            <span class="stat-num" data-target="2500">0</span
+            ><span class="stat-num">+</span>
+            <span class="stat-label">Mutlu Müşteri</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="10">0</span
+            ><span class="stat-num">+</span>
+            <span class="stat-label">Yıl Deneyim</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">Uzman Berber</span>
+          </div>
+        </div>
+      </div>
+      <a href="#services" class="scroll-indicator" aria-label="Aşağı kaydır">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════ SERVICES ═══════════════ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Ne Sunuyoruz</p>
+          <h2 class="section-title">Hizmetlerimiz</h2>
+          <p class="section-desc">
+            Her müşteri için özel, her kesimde mükemmeliyeti gözetiyoruz.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">✂️</div>
+            <h3>Klasik Saç Kesimi</h3>
+            <p>
+              El makası ile ustalıkla şekillendirilmiş, zamansız klasik
+              kesimler.
+            </p>
+            <div class="service-price">₺250</div>
+            <a href="#appointment" class="service-cta">Randevu Al →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">🪒</div>
+            <h3>Sakal Tıraşı</h3>
+            <p>
+              Sıcak havlu ve düz jilet ile geleneksel, rahatlatıcı sakal tıraşı.
+            </p>
+            <div class="service-price">₺150</div>
+            <a href="#appointment" class="service-cta">Randevu Al →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">💈</div>
+            <h3>Sakal Şekillendirme</h3>
+            <p>Yüz hatlarınıza uygun, titizlikle işlenmiş sakal tasarımı.</p>
+            <div class="service-price">₺200</div>
+            <a href="#appointment" class="service-cta">Randevu Al →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">🧴</div>
+            <h3>Cilt Bakımı</h3>
+            <p>Profesyonel cilt temizliği ve nemlendirme ile tazelenin.</p>
+            <div class="service-price">₺300</div>
+            <a href="#appointment" class="service-cta">Randevu Al →</a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">✨</div>
+            <h3>Saç + Sakal Paketi</h3>
+            <p>
+              Komple bakım deneyimi için saç kesimi ve sakal tıraşı bir arada.
+            </p>
+            <div class="service-price">₺380</div>
+            <a href="#appointment" class="service-cta">Randevu Al →</a>
+          </div>
+
+          <div class="service-card reveal featured-card">
+            <div class="service-badge">Popüler</div>
+            <div class="service-icon">👑</div>
+            <h3>VIP Premium Paket</h3>
+            <p>
+              Saç kesimi, sakal tıraşı, cilt bakımı ve özel masaj dahil tam VIP
+              deneyim.
+            </p>
+            <div class="service-price">₺600</div>
+            <a href="#appointment" class="service-cta">Randevu Al →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="section section-dark" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-img-wrap">
+              <div class="about-img-placeholder">
+                <div class="barber-pole"></div>
+                <div class="about-icon-big">💈</div>
+              </div>
+              <div class="about-badge reveal">
+                <span class="badge-num">10</span>
+                <span class="badge-text">Yıl<br />Deneyim</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <p class="section-eyebrow">Hikayemiz</p>
+            <h2 class="section-title">Craft'ı Sanat<br />Olarak Görüyoruz</h2>
+            <p class="about-text">
+              2015 yılında İstanbul'un kalbinde açılan BarberElite, yalnızca bir
+              berber salonu değil; erkek bakım kültürünü yeniden tanımlayan bir
+              deneyim mekânıdır.
+            </p>
+            <p class="about-text">
+              Her müşterimize özel ilgi gösteriyor, geleneksel berberlik
+              sanatını modern tekniklerle harmanlıyoruz. Amacımız sadece iyi bir
+              saç kesmek değil — sizi en iyi hissettirecek deneyimi sunmak.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Premium ürünler kullanıyoruz</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Hijyen sertifikalı ekip</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Randevusuz da hizmet</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>%100 müşteri memnuniyeti</span>
+              </div>
+            </div>
+            <a
+              href="#appointment"
+              class="btn btn-primary"
+              style="margin-top: 2rem"
+              >Randevu Al</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ GALLERY ═══════════════ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Çalışmalarımız</p>
+          <h2 class="section-title">Galeri</h2>
+          <p class="section-desc">
+            Her kesimde bıraktığımız izden gurur duyuyoruz.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item reveal g-large">
+            <div class="gallery-placeholder gp-1">
+              <span class="gallery-label">Fade Kesim</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <div class="gallery-placeholder gp-2">
+              <span class="gallery-label">Klasik Pompadur</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <div class="gallery-placeholder gp-3">
+              <span class="gallery-label">Modern Doku</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <div class="gallery-placeholder gp-4">
+              <span class="gallery-label">Sakal Şekil</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal">
+            <div class="gallery-placeholder gp-5">
+              <span class="gallery-label">Undercut</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal g-wide">
+            <div class="gallery-placeholder gp-6">
+              <span class="gallery-label">Klasik Tıraş</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TEAM ═══════════════ -->
+    <section class="section section-dark" id="team">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Ustalarımız</p>
+          <h2 class="section-title">Ekibimiz</h2>
+          <p class="section-desc">
+            Her biri kendi alanının uzmanı, tutkuyla çalışan berberlerimiz.
+          </p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-avatar">
+              <div class="avatar-placeholder ap-1">
+                <span>KA</span>
+              </div>
+              <div class="team-social">
+                <a href="#" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Kemal Aydın</h3>
+              <p class="team-role">Baş Berber & Kurucu</p>
+              <p class="team-desc">
+                15 yıllık deneyimiyle klasik ve modern kesimler konusunda
+                İstanbul'un en iyilerinden.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card reveal">
+            <div class="team-avatar">
+              <div class="avatar-placeholder ap-2">
+                <span>MS</span>
+              </div>
+              <div class="team-social">
+                <a href="#" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Murat Şahin</h3>
+              <p class="team-role">Sakal Tasarım Uzmanı</p>
+              <p class="team-desc">
+                Sakal şekillendirme ve düz jilet tıraşında benzersiz bir
+                dokunuş.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card reveal">
+            <div class="team-avatar">
+              <div class="avatar-placeholder ap-3">
+                <span>EK</span>
+              </div>
+              <div class="team-social">
+                <a href="#" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Emre Kaya</h3>
+              <p class="team-role">Modern Stil Uzmanı</p>
+              <p class="team-desc">
+                Fade, taper ve modern kesimler konusunda genç neslin favorisi.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card reveal">
+            <div class="team-avatar">
+              <div class="avatar-placeholder ap-4">
+                <span>AO</span>
+              </div>
+              <div class="team-social">
+                <a href="#" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Ali Öztürk</h3>
+              <p class="team-role">Cilt Bakım Uzmanı</p>
+              <p class="team-desc">
+                Cilt bakımı, nemlendirme ve yüz temizleme konularında
+                sertifikalı uzman.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Müşteri Görüşleri</p>
+          <h2 class="section-title">Ne Dediler?</h2>
+        </div>
+        <div class="testimonials-slider reveal">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <div class="testimonial-card">
+              <div class="t-stars">★★★★★</div>
+              <p class="t-text">
+                "BarberElite'den önce çok fazla berber denedim ama bu kaliteye
+                hiç ulaşamadım. Kemal Usta gerçekten bir sanat eseri yaratıyor!"
+              </p>
+              <div class="t-author">
+                <div class="t-avatar">CA</div>
+                <div>
+                  <strong>Can Arslan</strong>
+                  <span>Yazılım Mühendisi</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="t-stars">★★★★★</div>
+              <p class="t-text">
+                "Online randevu sistemi çok pratik. Sakal şekillendirme için
+                düzenli geliyorum, her seferinde mükemmel sonuç. Kesinlikle
+                tavsiye ederim."
+              </p>
+              <div class="t-author">
+                <div class="t-avatar">BY</div>
+                <div>
+                  <strong>Burak Yılmaz</strong>
+                  <span>Girişimci</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="t-stars">★★★★★</div>
+              <p class="t-text">
+                "VIP paketi denedim ve hayatımın en iyi berber deneyimini
+                yaşadım. Ortam harika, personel çok ilgili. Artık gitmeden
+                edemiyorum!"
+              </p>
+              <div class="t-author">
+                <div class="t-avatar">TK</div>
+                <div>
+                  <strong>Tarkan Koç</strong>
+                  <span>Tasarımcı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="t-stars">★★★★★</div>
+              <p class="t-text">
+                "Düz jilet tıraşını Murat Usta'dan yaptırdım. 45 dakika tam
+                anlamıyla spa deneyimiydi. Fiyat/kalite oranı süper."
+              </p>
+              <div class="t-author">
+                <div class="t-avatar">SO</div>
+                <div>
+                  <strong>Serkan Öğüt</strong>
+                  <span>Avukat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn" id="sliderPrev" aria-label="Önceki">
+              ‹
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn" id="sliderNext" aria-label="Sonraki">
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ APPOINTMENT ═══════════════ -->
+    <section class="section section-dark" id="appointment">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Hemen Rezervasyon</p>
+          <h2 class="section-title">Randevu Al</h2>
+          <p class="section-desc">
+            Sizi en kısa sürede ağırlamak için sabırsızlanıyoruz.
+          </p>
+        </div>
+        <div class="appointment-wrap reveal">
+          <form class="appointment-form" id="appointmentForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="apptName">Ad Soyad *</label>
+                <input
+                  type="text"
+                  id="apptName"
+                  name="name"
+                  placeholder="Adınız ve soyadınız"
+                  required
+                />
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="apptPhone">Telefon *</label>
+                <input
+                  type="tel"
+                  id="apptPhone"
+                  name="phone"
+                  placeholder="05XX XXX XX XX"
+                  required
+                />
+                <span class="form-error" id="phoneError"></span>
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="apptService">Hizmet *</label>
+                <select id="apptService" name="service" required>
+                  <option value="">Hizmet seçin</option>
+                  <option value="classic">Klasik Saç Kesimi — ₺250</option>
+                  <option value="shave">Sakal Tıraşı — ₺150</option>
+                  <option value="beard">Sakal Şekillendirme — ₺200</option>
+                  <option value="skin">Cilt Bakımı — ₺300</option>
+                  <option value="package">Saç + Sakal Paketi — ₺380</option>
+                  <option value="vip">VIP Premium Paket — ₺600</option>
+                </select>
+                <span class="form-error" id="serviceError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="apptBarber">Berber Tercihi</label>
+                <select id="apptBarber" name="barber">
+                  <option value="">Fark etmez</option>
+                  <option value="kemal">Kemal Aydın — Baş Berber</option>
+                  <option value="murat">Murat Şahin — Sakal Uzmanı</option>
+                  <option value="emre">Emre Kaya — Modern Stil</option>
+                  <option value="ali">Ali Öztürk — Cilt Bakımı</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="apptDate">Tarih *</label>
+                <input type="date" id="apptDate" name="date" required />
+                <span class="form-error" id="dateError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="apptTime">Saat *</label>
+                <select id="apptTime" name="time" required>
+                  <option value="">Saat seçin</option>
+                  <option value="09:00">09:00</option>
+                  <option value="09:30">09:30</option>
+                  <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="14:30">14:30</option>
+                  <option value="15:00">15:00</option>
+                  <option value="15:30">15:30</option>
+                  <option value="16:00">16:00</option>
+                  <option value="16:30">16:30</option>
+                  <option value="17:00">17:00</option>
+                  <option value="17:30">17:30</option>
+                  <option value="18:00">18:00</option>
+                </select>
+                <span class="form-error" id="timeError"></span>
+              </div>
+
+              <div class="form-group form-full">
+                <label for="apptNote">Notunuz</label>
+                <textarea
+                  id="apptNote"
+                  name="note"
+                  placeholder="Özel istekleriniz veya notlarınız..."
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+              <span class="btn-text">Randevuyu Onayla</span>
+              <span class="btn-loading" style="display: none"
+                >⏳ Gönderiliyor...</span
+              >
+            </button>
+          </form>
+          <!-- Success message -->
+          <div class="appt-success" id="apptSuccess" style="display: none">
+            <div class="success-icon">✂️</div>
+            <h3>Randevunuz Alındı!</h3>
+            <p>
+              En kısa sürede telefon veya e-posta ile onay göndereceğiz.
+              Teşekkürler!
+            </p>
+            <a href="#home" class="btn btn-primary" style="margin-top: 1.5rem"
+              >Ana Sayfaya Dön</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Bize Ulaşın</p>
+          <h2 class="section-title">İletişim</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-card">
+              <div class="contact-item">
+                <div class="c-icon">📍</div>
+                <div>
+                  <strong>Adres</strong>
+                  <p>
+                    Nişantaşı Mah. Vali Konağı Cad. No:42<br />Şişli / İstanbul
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon">📞</div>
+                <div>
+                  <strong>Telefon</strong>
+                  <p><a href="tel:+902121234567">+90 (212) 123 45 67</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon">📧</div>
+                <div>
+                  <strong>E-posta</strong>
+                  <p>
+                    <a href="mailto:info@barberelite.com"
+                      >info@barberelite.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon">🕐</div>
+                <div>
+                  <strong>Çalışma Saatleri</strong>
+                  <div class="hours-grid">
+                    <span>Pzt – Cmt</span><span>09:00 – 20:00</span>
+                    <span>Pazar</span><span>10:00 – 18:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <span>📷</span> Instagram
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <span>👤</span> Facebook
+              </a>
+              <a href="#" class="social-link" aria-label="WhatsApp">
+                <span>💬</span> WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="map-wrap reveal">
+            <div class="map-placeholder">
+              <div class="map-pin">📍</div>
+              <p>Nişantaşı, İstanbul</p>
+              <a
+                href="https://maps.google.com/?q=Nişantaşı+İstanbul"
+                target="_blank"
+                class="btn btn-ghost"
+                style="margin-top: 1rem"
+                >Google Maps'te Aç</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <span class="logo-icon">✂</span>
+              <span class="logo-text">Barber<em>Elite</em></span>
+            </a>
+            <p>Premium berber deneyimi için İstanbul'un en seçkin adresi.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Hızlı Linkler</h4>
+            <ul>
+              <li><a href="#services">Hizmetler</a></li>
+              <li><a href="#about">Hakkımızda</a></li>
+              <li><a href="#gallery">Galeri</a></li>
+              <li><a href="#team">Ekibimiz</a></li>
+              <li><a href="#appointment">Randevu Al</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Hizmetler</h4>
+            <ul>
+              <li><a href="#appointment">Saç Kesimi</a></li>
+              <li><a href="#appointment">Sakal Tıraşı</a></li>
+              <li><a href="#appointment">Cilt Bakımı</a></li>
+              <li><a href="#appointment">VIP Paket</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>İletişim</h4>
+            <p>📍 Nişantaşı, Şişli / İstanbul</p>
+            <p>📞 +90 (212) 123 45 67</p>
+            <p>📧 info@barberelite.com</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Facebook">👤</a>
+              <a href="#" aria-label="WhatsApp">💬</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 BarberElite. Tüm hakları saklıdır.</p>
+          <a href="#home" class="back-to-top" aria-label="Yukarı dön">↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
